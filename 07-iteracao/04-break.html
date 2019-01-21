@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>break - Pense em Python</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Pense como um cientista da computação">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body class="light">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li class="affix"><a href="../introducao.html">Pense em Python</a></li><li class="affix"><a href="../prefacio.html">Prefácio</a></li><li><a href="../01-a-jornada-do-programa/00-a-jornada-do-programa.html"><strong aria-hidden="true">1.</strong> A jornada do programa</a></li><li><ol class="section"><li><a href="../01-a-jornada-do-programa/01-o-que-e-um-programa.html"><strong aria-hidden="true">1.1.</strong> O que é um programa?</a></li><li><a href="../01-a-jornada-do-programa/02-execucao-do-python.html"><strong aria-hidden="true">1.2.</strong> Execução do Python</a></li><li><a href="../01-a-jornada-do-programa/03-o-primeiro-programa.html"><strong aria-hidden="true">1.3.</strong> O primeiro programa</a></li><li><a href="../01-a-jornada-do-programa/04-operadores-aritmeticos.html"><strong aria-hidden="true">1.4.</strong> Operadores aritméticos</a></li><li><a href="../01-a-jornada-do-programa/05-valores-e-tipos.html"><strong aria-hidden="true">1.5.</strong> Valores e tipos</a></li><li><a href="../01-a-jornada-do-programa/06-linguagens-formais-e-naturais.html"><strong aria-hidden="true">1.6.</strong> Linguagens formais e naturais</a></li><li><a href="../01-a-jornada-do-programa/07-depuracao.html"><strong aria-hidden="true">1.7.</strong> Depuração</a></li><li><a href="../01-a-jornada-do-programa/08-glossario.html"><strong aria-hidden="true">1.8.</strong> Glossário</a></li><li><a href="../01-a-jornada-do-programa/09-exercicios.html"><strong aria-hidden="true">1.9.</strong> Exercícios</a></li></ol></li><li><a href="../02-variaveis-expressoes-e-instrucoes/00-variaveis-expressoes-e-instrucoes.html"><strong aria-hidden="true">2.</strong> Variáveis, expressões e instruções</a></li><li><ol class="section"><li><a href="../02-variaveis-expressoes-e-instrucoes/01-instrucoes-de-atribuicao.html"><strong aria-hidden="true">2.1.</strong> Instruções de atribuição</a></li><li><a href="../02-variaveis-expressoes-e-instrucoes/02-nomes-de-variaveis.html"><strong aria-hidden="true">2.2.</strong> Nomes de variáveis</a></li><li><a href="../02-variaveis-expressoes-e-instrucoes/03-expressoes-e-instrucoes.html"><strong aria-hidden="true">2.3.</strong> Expressões e instruções</a></li><li><a href="../02-variaveis-expressoes-e-instrucoes/04-modo-script.html"><strong aria-hidden="true">2.4.</strong> Modo script</a></li><li><a href="../02-variaveis-expressoes-e-instrucoes/05-ordem-das-operacoes.html"><strong aria-hidden="true">2.5.</strong> Ordem das operações</a></li><li><a href="../02-variaveis-expressoes-e-instrucoes/06-operacoes-com-strings.html"><strong aria-hidden="true">2.6.</strong> Operações com strings</a></li><li><a href="../02-variaveis-expressoes-e-instrucoes/07-comentarios.html"><strong aria-hidden="true">2.7.</strong> Comentários</a></li><li><a href="../02-variaveis-expressoes-e-instrucoes/08-depuracao.html"><strong aria-hidden="true">2.8.</strong> Depuração</a></li><li><a href="../02-variaveis-expressoes-e-instrucoes/09-glossario.html"><strong aria-hidden="true">2.9.</strong> Glossário</a></li><li><a href="../02-variaveis-expressoes-e-instrucoes/10-exercicios.html"><strong aria-hidden="true">2.10.</strong> Exercícios</a></li></ol></li><li><a href="../03-funcoes/00-funcoes.html"><strong aria-hidden="true">3.</strong> Funções</a></li><li><ol class="section"><li><a href="../03-funcoes/01-chamada-de-funcao.html"><strong aria-hidden="true">3.1.</strong> Chamada de função</a></li><li><a href="../03-funcoes/02-funcoes-matematicas.html"><strong aria-hidden="true">3.2.</strong> Funções matemáticas</a></li><li><a href="../03-funcoes/03-composicao.html"><strong aria-hidden="true">3.3.</strong> Composição</a></li><li><a href="../03-funcoes/04-como-acrescentar-novas-funcoes.html"><strong aria-hidden="true">3.4.</strong> Como acrescentar novas funções</a></li><li><a href="../03-funcoes/05-uso-e-definicoes.html"><strong aria-hidden="true">3.5.</strong> Uso e definições</a></li><li><a href="../03-funcoes/06-fluxo-de-execucao.html"><strong aria-hidden="true">3.6.</strong> Fluxo de execução</a></li><li><a href="../03-funcoes/07-parametros-e-argumentos.html"><strong aria-hidden="true">3.7.</strong> Parâmetros e argumentos</a></li><li><a href="../03-funcoes/08-as-variaveis-e-os-parametros-sao-locais.html"><strong aria-hidden="true">3.8.</strong> As variáveis e os parâmetros são locais</a></li><li><a href="../03-funcoes/09-diagrama-da-pilha.html"><strong aria-hidden="true">3.9.</strong> Diagrama da pilha</a></li><li><a href="../03-funcoes/10-funcoes-com-resultado-e-funcoes-nulas.html"><strong aria-hidden="true">3.10.</strong> Funções com resultado e funções nulas</a></li><li><a href="../03-funcoes/11-por-que-funcoes.html"><strong aria-hidden="true">3.11.</strong> Por que funções?</a></li><li><a href="../03-funcoes/12-depuracao.html"><strong aria-hidden="true">3.12.</strong> Depuração</a></li><li><a href="../03-funcoes/13-glossario.html"><strong aria-hidden="true">3.13.</strong> Glossário</a></li><li><a href="../03-funcoes/14-exercicios.html"><strong aria-hidden="true">3.14.</strong> Exercícios</a></li></ol></li><li><a href="../04-estudo-de-caso-projeto-de-interface/00-estudo-de-caso-projeto-de-interface.html"><strong aria-hidden="true">4.</strong> Estudo de caso: projeto de interface</a></li><li><ol class="section"><li><a href="../04-estudo-de-caso-projeto-de-interface/01-modulo-turtle.html"><strong aria-hidden="true">4.1.</strong> Módulo turtle</a></li><li><a href="../04-estudo-de-caso-projeto-de-interface/02-repeticao-simples.html"><strong aria-hidden="true">4.2.</strong> Repetição simples</a></li><li><a href="../04-estudo-de-caso-projeto-de-interface/03-exercicios.html"><strong aria-hidden="true">4.3.</strong> Exercícios</a></li><li><a href="../04-estudo-de-caso-projeto-de-interface/04-encapsulamento.html"><strong aria-hidden="true">4.4.</strong> Encapsulamento</a></li><li><a href="../04-estudo-de-caso-projeto-de-interface/05-generalizacao.html"><strong aria-hidden="true">4.5.</strong> Generalização</a></li><li><a href="../04-estudo-de-caso-projeto-de-interface/06-projeto-da-interface.html"><strong aria-hidden="true">4.6.</strong> Projeto da interface</a></li><li><a href="../04-estudo-de-caso-projeto-de-interface/07-refatoracao.html"><strong aria-hidden="true">4.7.</strong> Refatoração</a></li><li><a href="../04-estudo-de-caso-projeto-de-interface/08-um-plano-de-desenvolvimento.html"><strong aria-hidden="true">4.8.</strong> Um plano de desenvolvimento</a></li><li><a href="../04-estudo-de-caso-projeto-de-interface/09-docstring.html"><strong aria-hidden="true">4.9.</strong> docstring</a></li><li><a href="../04-estudo-de-caso-projeto-de-interface/10-depuracao.html"><strong aria-hidden="true">4.10.</strong> Depuração</a></li><li><a href="../04-estudo-de-caso-projeto-de-interface/11-glossario.html"><strong aria-hidden="true">4.11.</strong> Glossário</a></li><li><a href="../04-estudo-de-caso-projeto-de-interface/12-exercicios.html"><strong aria-hidden="true">4.12.</strong> Exercícios</a></li></ol></li><li><a href="../05-condicionais-e-recursividade/00-condicionais-e-recursividade.html"><strong aria-hidden="true">5.</strong> Condicionais e recursividade</a></li><li><ol class="section"><li><a href="../05-condicionais-e-recursividade/01-divisao-pelo-piso-e-modulo.html"><strong aria-hidden="true">5.1.</strong> Divisão pelo piso e módulo</a></li><li><a href="../05-condicionais-e-recursividade/02-expressoes-booleanas.html"><strong aria-hidden="true">5.2.</strong> Expressões booleanas</a></li><li><a href="../05-condicionais-e-recursividade/03-operadores-logicos.html"><strong aria-hidden="true">5.3.</strong> Operadores lógicos</a></li><li><a href="../05-condicionais-e-recursividade/04-execucao-condicional.html"><strong aria-hidden="true">5.4.</strong> Execução condicional</a></li><li><a href="../05-condicionais-e-recursividade/05-execucao-alternativa.html"><strong aria-hidden="true">5.5.</strong> Execução alternativa</a></li><li><a href="../05-condicionais-e-recursividade/06-condicionais-encadeadas.html"><strong aria-hidden="true">5.6.</strong> Condicionais encadeadas</a></li><li><a href="../05-condicionais-e-recursividade/07-condicionais-aninhadas.html"><strong aria-hidden="true">5.7.</strong> Condicionais aninhadas</a></li><li><a href="../05-condicionais-e-recursividade/08-recursividade.html"><strong aria-hidden="true">5.8.</strong> Recursividade</a></li><li><a href="../05-condicionais-e-recursividade/09-diagramas-da-pilha-para-funcoes-recursivas.html"><strong aria-hidden="true">5.9.</strong> Diagramas da pilha para funções recursivas</a></li><li><a href="../05-condicionais-e-recursividade/10-recursividade-infinita.html"><strong aria-hidden="true">5.10.</strong> Recursividade infinita</a></li><li><a href="../05-condicionais-e-recursividade/11-entrada-de-teclado.html"><strong aria-hidden="true">5.11.</strong> Entrada de teclado</a></li><li><a href="../05-condicionais-e-recursividade/12-depuracao.html"><strong aria-hidden="true">5.12.</strong> Depuração</a></li><li><a href="../05-condicionais-e-recursividade/13-glossario.html"><strong aria-hidden="true">5.13.</strong> Glossário</a></li><li><a href="../05-condicionais-e-recursividade/14-exercicios.html"><strong aria-hidden="true">5.14.</strong> Exercícios</a></li></ol></li><li><a href="../06-funcoes-com-resultado/00-funcoes-com-resultado.html"><strong aria-hidden="true">6.</strong> Funções com resultado</a></li><li><ol class="section"><li><a href="../06-funcoes-com-resultado/01-valores-de-retorno.html"><strong aria-hidden="true">6.1.</strong> Valores de retorno</a></li><li><a href="../06-funcoes-com-resultado/02-desenvolvimento-incremental.html"><strong aria-hidden="true">6.2.</strong> Desenvolvimento incremental</a></li><li><a href="../06-funcoes-com-resultado/03-composicao.html"><strong aria-hidden="true">6.3.</strong> Composição</a></li><li><a href="../06-funcoes-com-resultado/04-funcoes-booleanas.html"><strong aria-hidden="true">6.4.</strong> Funções booleanas</a></li><li><a href="../06-funcoes-com-resultado/05-mais-recursividade.html"><strong aria-hidden="true">6.5.</strong> Mais recursividade</a></li><li><a href="../06-funcoes-com-resultado/06-salto-de-fe.html"><strong aria-hidden="true">6.6.</strong> Salto de fé</a></li><li><a href="../06-funcoes-com-resultado/07-mais-um-exemplo.html"><strong aria-hidden="true">6.7.</strong> Mais um exemplo</a></li><li><a href="../06-funcoes-com-resultado/08-verificacao-de-tipos.html"><strong aria-hidden="true">6.8.</strong> Verificação de tipos</a></li><li><a href="../06-funcoes-com-resultado/09-depuracao.html"><strong aria-hidden="true">6.9.</strong> Depuração</a></li><li><a href="../06-funcoes-com-resultado/10-glossario.html"><strong aria-hidden="true">6.10.</strong> Glossário</a></li><li><a href="../06-funcoes-com-resultado/11-exercicios.html"><strong aria-hidden="true">6.11.</strong> Exercícios</a></li></ol></li><li><a href="../07-iteracao/00-iteracao.html"><strong aria-hidden="true">7.</strong> Iteração</a></li><li><ol class="section"><li><a href="../07-iteracao/01-reatribuicao.html"><strong aria-hidden="true">7.1.</strong> Reatribuição</a></li><li><a href="../07-iteracao/02-atualizacao-de-variaveis.html"><strong aria-hidden="true">7.2.</strong> Atualização de variáveis</a></li><li><a href="../07-iteracao/03-instrucao-while.html"><strong aria-hidden="true">7.3.</strong> Instrução while</a></li><li><a href="../07-iteracao/04-break.html" class="active"><strong aria-hidden="true">7.4.</strong> break</a></li><li><a href="../07-iteracao/05-raizes-quadradas.html"><strong aria-hidden="true">7.5.</strong> Raízes quadradas</a></li><li><a href="../07-iteracao/06-algoritmos.html"><strong aria-hidden="true">7.6.</strong> Algoritmos</a></li><li><a href="../07-iteracao/07-depuracao.html"><strong aria-hidden="true">7.7.</strong> Depuração</a></li><li><a href="../07-iteracao/08-glossario.html"><strong aria-hidden="true">7.8.</strong> Glossário</a></li><li><a href="../07-iteracao/09-exercicios.html"><strong aria-hidden="true">7.9.</strong> Exercícios</a></li></ol></li><li><a href="../08-strings/00-strings.html"><strong aria-hidden="true">8.</strong> Strings</a></li><li><ol class="section"><li><a href="../08-strings/01-uma-string-e-uma-sequencia.html"><strong aria-hidden="true">8.1.</strong> Uma string é uma sequência</a></li><li><a href="../08-strings/02-len.html"><strong aria-hidden="true">8.2.</strong> len</a></li><li><a href="../08-strings/03-travessia-com-loop-for.html"><strong aria-hidden="true">8.3.</strong> Travessia com loop for</a></li><li><a href="../08-strings/04-fatiamento-de-strings.html"><strong aria-hidden="true">8.4.</strong> Fatiamento de strings</a></li><li><a href="../08-strings/05-strings-sao-imutaveis.html"><strong aria-hidden="true">8.5.</strong> Strings são imutáveis</a></li><li><a href="../08-strings/06-buscando.html"><strong aria-hidden="true">8.6.</strong> Buscando</a></li><li><a href="../08-strings/07-loop-e-contagem.html"><strong aria-hidden="true">8.7.</strong> Loop e contagem</a></li><li><a href="../08-strings/08-metodos-de-strings.html"><strong aria-hidden="true">8.8.</strong> Métodos de strings</a></li><li><a href="../08-strings/09-operador-in.html"><strong aria-hidden="true">8.9.</strong> Operador in</a></li><li><a href="../08-strings/10-comparacao-de-strings.html"><strong aria-hidden="true">8.10.</strong> Comparação de strings</a></li><li><a href="../08-strings/11-depuracao.html"><strong aria-hidden="true">8.11.</strong> Depuração</a></li><li><a href="../08-strings/12-glossario.html"><strong aria-hidden="true">8.12.</strong> Glossário</a></li><li><a href="../08-strings/13-exercicios.html"><strong aria-hidden="true">8.13.</strong> Exercícios</a></li></ol></li><li><a href="../09-estudo-de-caso-jogos-de-palavras/00-estudo-de-caso-jogos-de-palavras.html"><strong aria-hidden="true">9.</strong> Estudo de caso: jogos de palavras</a></li><li><ol class="section"><li><a href="../09-estudo-de-caso-jogos-de-palavras/01-leitura-de-listas-de-palavras.html"><strong aria-hidden="true">9.1.</strong> Leitura de listas de palavras</a></li><li><a href="../09-estudo-de-caso-jogos-de-palavras/02-exercicios.html"><strong aria-hidden="true">9.2.</strong> Exercícios</a></li><li><a href="../09-estudo-de-caso-jogos-de-palavras/03-busca.html"><strong aria-hidden="true">9.3.</strong> Busca</a></li><li><a href="../09-estudo-de-caso-jogos-de-palavras/04-loop-com-indices.html"><strong aria-hidden="true">9.4.</strong> Loop com índices</a></li><li><a href="../09-estudo-de-caso-jogos-de-palavras/05-depuracao.html"><strong aria-hidden="true">9.5.</strong> Depuração</a></li><li><a href="../09-estudo-de-caso-jogos-de-palavras/06-glossario.html"><strong aria-hidden="true">9.6.</strong> Glossário</a></li><li><a href="../09-estudo-de-caso-jogos-de-palavras/07-exercicios.html"><strong aria-hidden="true">9.7.</strong> Exercícios</a></li></ol></li><li><a href="../10-listas/00-listas.html"><strong aria-hidden="true">10.</strong> Listas</a></li><li><ol class="section"><li><a href="../10-listas/01-uma-lista-e-uma-sequencia.html"><strong aria-hidden="true">10.1.</strong> Uma lista é uma sequência</a></li><li><a href="../10-listas/02-listas-sao-mutaveis.html"><strong aria-hidden="true">10.2.</strong> Listas são mutáveis</a></li><li><a href="../10-listas/03-percorrendo-uma-lista.html"><strong aria-hidden="true">10.3.</strong> Percorrendo uma lista</a></li><li><a href="../10-listas/04-operacoes-com-listas.html"><strong aria-hidden="true">10.4.</strong> Operações com listas</a></li><li><a href="../10-listas/05-fatias-de-listas.html"><strong aria-hidden="true">10.5.</strong> Fatias de listas</a></li><li><a href="../10-listas/06-metodos-de-listas.html"><strong aria-hidden="true">10.6.</strong> Métodos de listas</a></li><li><a href="../10-listas/07-mapeamento-filtragem-e-reducao.html"><strong aria-hidden="true">10.7.</strong> Mapeamento, filtragem e redução</a></li><li><a href="../10-listas/08-como-excluir-elementos.html"><strong aria-hidden="true">10.8.</strong> Como excluir elementos</a></li><li><a href="../10-listas/09-listas-e-strings.html"><strong aria-hidden="true">10.9.</strong> Listas e strings</a></li><li><a href="../10-listas/10-objetos-e-valores.html"><strong aria-hidden="true">10.10.</strong> Objetos e valores</a></li><li><a href="../10-listas/11-alias.html"><strong aria-hidden="true">10.11.</strong> Alias</a></li><li><a href="../10-listas/12-argumentos-de-listas.html"><strong aria-hidden="true">10.12.</strong> Argumentos de listas</a></li><li><a href="../10-listas/13-depuracao.html"><strong aria-hidden="true">10.13.</strong> Depuração</a></li><li><a href="../10-listas/14-glossario.html"><strong aria-hidden="true">10.14.</strong> Glossário</a></li><li><a href="../10-listas/15-exercicios.html"><strong aria-hidden="true">10.15.</strong> Exercícios</a></li></ol></li><li><a href="../11-dicionarios/00-dicionarios.html"><strong aria-hidden="true">11.</strong> Dicionários</a></li><li><ol class="section"><li><a href="../11-dicionarios/01-um-dicionario-e-um-mapeamento.html"><strong aria-hidden="true">11.1.</strong> Um dicionário é um mapeamento</a></li><li><a href="../11-dicionarios/02-um-dicionario-como-uma-colecao-de-contadores.html"><strong aria-hidden="true">11.2.</strong> Um dicionário como uma coleção de contadores</a></li><li><a href="../11-dicionarios/03-loop-e-dicionarios.html"><strong aria-hidden="true">11.3.</strong> Loop e dicionários</a></li><li><a href="../11-dicionarios/04-busca-reversa.html"><strong aria-hidden="true">11.4.</strong> Busca reversa</a></li><li><a href="../11-dicionarios/05-dicionarios-e-listas.html"><strong aria-hidden="true">11.5.</strong> Dicionários e listas</a></li><li><a href="../11-dicionarios/06-memos.html"><strong aria-hidden="true">11.6.</strong> Memos</a></li><li><a href="../11-dicionarios/07-variaveis-globais.html"><strong aria-hidden="true">11.7.</strong> Variáveis globais</a></li><li><a href="../11-dicionarios/08-depuracao.html"><strong aria-hidden="true">11.8.</strong> Depuração</a></li><li><a href="../11-dicionarios/09-glossario.html"><strong aria-hidden="true">11.9.</strong> Glossário</a></li><li><a href="../11-dicionarios/10-exercicios.html"><strong aria-hidden="true">11.10.</strong> Exercícios</a></li></ol></li><li><a href="../12-tuplas/00-tuplas.html"><strong aria-hidden="true">12.</strong> Tuplas</a></li><li><ol class="section"><li><a href="../12-tuplas/01-tuplas-sao-imutaveis.html"><strong aria-hidden="true">12.1.</strong> Tuplas são imutáveis</a></li><li><a href="../12-tuplas/02-atribuicao-de-tuplas.html"><strong aria-hidden="true">12.2.</strong> Atribuição de tuplas</a></li><li><a href="../12-tuplas/03-tuplas-como-valores-de-retorno.html"><strong aria-hidden="true">12.3.</strong> Tuplas como valores de retorno</a></li><li><a href="../12-tuplas/04-tuplas-com-argumentos-de-comprimento-variavel.html"><strong aria-hidden="true">12.4.</strong> Tuplas com argumentos de comprimento variável</a></li><li><a href="../12-tuplas/05-listas-e-tuplas.html"><strong aria-hidden="true">12.5.</strong> Listas e tuplas</a></li><li><a href="../12-tuplas/06-dicionarios-e-tuplas.html"><strong aria-hidden="true">12.6.</strong> Dicionários e tuplas</a></li><li><a href="../12-tuplas/07-sequencias-de-sequencias.html"><strong aria-hidden="true">12.7.</strong> Sequências de sequências</a></li><li><a href="../12-tuplas/08-depuracao.html"><strong aria-hidden="true">12.8.</strong> Depuração</a></li><li><a href="../12-tuplas/09-glossario.html"><strong aria-hidden="true">12.9.</strong> Glossário</a></li><li><a href="../12-tuplas/10-exercicios.html"><strong aria-hidden="true">12.10.</strong> Exercícios</a></li></ol></li><li><a href="../13-estudo-de-caso-selecao-de-estrutura-de-dados/00-estudo-de-caso-selecao-de-estrutura-de-dados.html"><strong aria-hidden="true">13.</strong> Estudo de caso: seleção de estrutura de dados</a></li><li><ol class="section"><li><a href="../13-estudo-de-caso-selecao-de-estrutura-de-dados/01-analise-de-frequencia-de-palavras.html"><strong aria-hidden="true">13.1.</strong> Análise de frequência de palavras</a></li><li><a href="../13-estudo-de-caso-selecao-de-estrutura-de-dados/02-numeros-aleatorios.html"><strong aria-hidden="true">13.2.</strong> Números aleatórios</a></li><li><a href="../13-estudo-de-caso-selecao-de-estrutura-de-dados/03-histograma-de-palavras.html"><strong aria-hidden="true">13.3.</strong> Histograma de palavras</a></li><li><a href="../13-estudo-de-caso-selecao-de-estrutura-de-dados/04-palavras-mais-comuns.html"><strong aria-hidden="true">13.4.</strong> Palavras mais comuns</a></li><li><a href="../13-estudo-de-caso-selecao-de-estrutura-de-dados/05-parametros-opcionais.html"><strong aria-hidden="true">13.5.</strong> Parâmetros opcionais</a></li><li><a href="../13-estudo-de-caso-selecao-de-estrutura-de-dados/06-subtracao-de-dicionario.html"><strong aria-hidden="true">13.6.</strong> Subtração de dicionário</a></li><li><a href="../13-estudo-de-caso-selecao-de-estrutura-de-dados/07-palavras-aleatorias.html"><strong aria-hidden="true">13.7.</strong> Palavras aleatórias</a></li><li><a href="../13-estudo-de-caso-selecao-de-estrutura-de-dados/08-analise-de-markov.html"><strong aria-hidden="true">13.8.</strong> Análise de Markov</a></li><li><a href="../13-estudo-de-caso-selecao-de-estrutura-de-dados/09-estruturas-de-dados.html"><strong aria-hidden="true">13.9.</strong> Estruturas de dados</a></li><li><a href="../13-estudo-de-caso-selecao-de-estrutura-de-dados/10-depuracao.html"><strong aria-hidden="true">13.10.</strong> Depuração</a></li><li><a href="../13-estudo-de-caso-selecao-de-estrutura-de-dados/11-glossario.html"><strong aria-hidden="true">13.11.</strong> Glossário</a></li><li><a href="../13-estudo-de-caso-selecao-de-estrutura-de-dados/12-exercicios.html"><strong aria-hidden="true">13.12.</strong> Exercícios</a></li></ol></li><li><a href="../14-arquivos/00-arquivos.html"><strong aria-hidden="true">14.</strong> Arquivos</a></li><li><ol class="section"><li><a href="../14-arquivos/01-persistencia.html"><strong aria-hidden="true">14.1.</strong> Persistência</a></li><li><a href="../14-arquivos/02-leitura-e-escrita.html"><strong aria-hidden="true">14.2.</strong> Leitura e escrita</a></li><li><a href="../14-arquivos/03-operador-de-formatacao.html"><strong aria-hidden="true">14.3.</strong> Operador de formatação</a></li><li><a href="../14-arquivos/04-nomes-de-arquivo-e-caminhos.html"><strong aria-hidden="true">14.4.</strong> Nomes de arquivo e caminhos</a></li><li><a href="../14-arquivos/05-captura-de-excecoes.html"><strong aria-hidden="true">14.5.</strong> Captura de exceções</a></li><li><a href="../14-arquivos/06-bancos-de-dados.html"><strong aria-hidden="true">14.6.</strong> Bancos de dados</a></li><li><a href="../14-arquivos/07-usando-o-pickle.html"><strong aria-hidden="true">14.7.</strong> Usando o Pickle</a></li><li><a href="../14-arquivos/08-pipes.html"><strong aria-hidden="true">14.8.</strong> Pipes</a></li><li><a href="../14-arquivos/09-escrevendo-modulos.html"><strong aria-hidden="true">14.9.</strong> Escrevendo módulos</a></li><li><a href="../14-arquivos/10-depuracao.html"><strong aria-hidden="true">14.10.</strong> Depuração</a></li><li><a href="../14-arquivos/11-glossario.html"><strong aria-hidden="true">14.11.</strong> Glossário</a></li><li><a href="../14-arquivos/12-exercicios.html"><strong aria-hidden="true">14.12.</strong> Exercícios</a></li></ol></li><li><a href="../15-classes-e-objetos/00-classes-e-objetos.html"><strong aria-hidden="true">15.</strong> Classes e objetos</a></li><li><ol class="section"><li><a href="../15-classes-e-objetos/01-tipos-definidos-pelos-programadores.html"><strong aria-hidden="true">15.1.</strong> Tipos definidos pelos programadores</a></li><li><a href="../15-classes-e-objetos/02-atributos.html"><strong aria-hidden="true">15.2.</strong> Atributos</a></li><li><a href="../15-classes-e-objetos/03-retangulos.html"><strong aria-hidden="true">15.3.</strong> Retângulos</a></li><li><a href="../15-classes-e-objetos/04-instancias-como-valores-de-retorno.html"><strong aria-hidden="true">15.4.</strong> Instâncias como valores de retorno</a></li><li><a href="../15-classes-e-objetos/05-objetos-sao-mutaveis.html"><strong aria-hidden="true">15.5.</strong> Objetos são mutáveis</a></li><li><a href="../15-classes-e-objetos/06-copia.html"><strong aria-hidden="true">15.6.</strong> Cópia</a></li><li><a href="../15-classes-e-objetos/07-depuracao.html"><strong aria-hidden="true">15.7.</strong> Depuração</a></li><li><a href="../15-classes-e-objetos/08-glossario.html"><strong aria-hidden="true">15.8.</strong> Glossário</a></li><li><a href="../15-classes-e-objetos/09-exercicios.html"><strong aria-hidden="true">15.9.</strong> Exercícios</a></li></ol></li><li><a href="../16-classes-e-funcoes/00-classes-e-funcoes.html"><strong aria-hidden="true">16.</strong> Classes e funções</a></li><li><ol class="section"><li><a href="../16-classes-e-funcoes/01-time.html"><strong aria-hidden="true">16.1.</strong> Time</a></li><li><a href="../16-classes-e-funcoes/02-funcoes-puras.html"><strong aria-hidden="true">16.2.</strong> Funções puras</a></li><li><a href="../16-classes-e-funcoes/03-modificadores.html"><strong aria-hidden="true">16.3.</strong> Modificadores</a></li><li><a href="../16-classes-e-funcoes/04-prototipacao-versus-planejamento.html"><strong aria-hidden="true">16.4.</strong> Prototipação versus planejamento</a></li><li><a href="../16-classes-e-funcoes/05-depuracao.html"><strong aria-hidden="true">16.5.</strong> Depuração</a></li><li><a href="../16-classes-e-funcoes/06-glossario.html"><strong aria-hidden="true">16.6.</strong> Glossário</a></li><li><a href="../16-classes-e-funcoes/07-exercicios.html"><strong aria-hidden="true">16.7.</strong> Exercícios</a></li></ol></li><li><a href="../17-classes-e-metodos/00-classes-e-metodos.html"><strong aria-hidden="true">17.</strong> Classes e métodos</a></li><li><ol class="section"><li><a href="../17-classes-e-metodos/01-recursos-de-orientacao-a-objeto.html"><strong aria-hidden="true">17.1.</strong> Recursos de orientação a objeto</a></li><li><a href="../17-classes-e-metodos/02-exibicao-de-objetos.html"><strong aria-hidden="true">17.2.</strong> Exibição de objetos</a></li><li><a href="../17-classes-e-metodos/03-outro-exemplo.html"><strong aria-hidden="true">17.3.</strong> Outro exemplo</a></li><li><a href="../17-classes-e-metodos/04-um-exemplo-mais-complicado.html"><strong aria-hidden="true">17.4.</strong> Um exemplo mais complicado</a></li><li><a href="../17-classes-e-metodos/05-metodo-init.html"><strong aria-hidden="true">17.5.</strong> Método init</a></li><li><a href="../17-classes-e-metodos/06-metodo-__str__.html"><strong aria-hidden="true">17.6.</strong> Método str</a></li><li><a href="../17-classes-e-metodos/07-sobrecarga-de-operadores.html"><strong aria-hidden="true">17.7.</strong> Sobrecarga de operadores</a></li><li><a href="../17-classes-e-metodos/08-despacho-por-tipo.html"><strong aria-hidden="true">17.8.</strong> Despacho por tipo</a></li><li><a href="../17-classes-e-metodos/09-polimorfismo.html"><strong aria-hidden="true">17.9.</strong> Polimorfismo</a></li><li><a href="../17-classes-e-metodos/10-interface-e-implementacao.html"><strong aria-hidden="true">17.10.</strong> Interface e implementação</a></li><li><a href="../17-classes-e-metodos/11-depuracao.html"><strong aria-hidden="true">17.11.</strong> Depuração</a></li><li><a href="../17-classes-e-metodos/12-glossario.html"><strong aria-hidden="true">17.12.</strong> Glossário</a></li><li><a href="../17-classes-e-metodos/13-exercicios.html"><strong aria-hidden="true">17.13.</strong> Exercícios</a></li></ol></li><li><a href="../18-heranca/00-heranca.html"><strong aria-hidden="true">18.</strong> Herança</a></li><li><ol class="section"><li><a href="../18-heranca/01-objetos-card.html"><strong aria-hidden="true">18.1.</strong> Objetos Card</a></li><li><a href="../18-heranca/02-atributos-de-classe.html"><strong aria-hidden="true">18.2.</strong> Atributos de classe</a></li><li><a href="../18-heranca/03-comparacao-de-cartas.html"><strong aria-hidden="true">18.3.</strong> Comparação de cartas</a></li><li><a href="../18-heranca/04-baralhos.html"><strong aria-hidden="true">18.4.</strong> Baralhos</a></li><li><a href="../18-heranca/05-exibicao-do-baralho.html"><strong aria-hidden="true">18.5.</strong> Exibição do baralho</a></li><li><a href="../18-heranca/06-adicao-remocao-embaralhamento-e-classificacao.html"><strong aria-hidden="true">18.6.</strong> Adição, remoção, embaralhamento e classificação</a></li><li><a href="../18-heranca/07-heranca.html"><strong aria-hidden="true">18.7.</strong> Herança</a></li><li><a href="../18-heranca/08-diagramas-de-classe.html"><strong aria-hidden="true">18.8.</strong> Diagramas de classe</a></li><li><a href="../18-heranca/09-encapsulamento-de-dados.html"><strong aria-hidden="true">18.9.</strong> Encapsulamento de dados</a></li><li><a href="../18-heranca/10-depuracao.html"><strong aria-hidden="true">18.10.</strong> Depuração</a></li><li><a href="../18-heranca/11-glossario.html"><strong aria-hidden="true">18.11.</strong> Glossário</a></li><li><a href="../18-heranca/12-exercicios.html"><strong aria-hidden="true">18.12.</strong> Exercícios</a></li></ol></li><li><a href="../19-extra/00-extra.html"><strong aria-hidden="true">19.</strong> Extra</a></li><li><ol class="section"><li><a href="../19-extra/01-expressoes-condicionais.html"><strong aria-hidden="true">19.1.</strong> Expressões condicionais</a></li><li><a href="../19-extra/02-abrangencia-de-listas.html"><strong aria-hidden="true">19.2.</strong> Abrangência de listas</a></li><li><a href="../19-extra/03-expressoes-geradoras.html"><strong aria-hidden="true">19.3.</strong> Expressões geradoras</a></li><li><a href="../19-extra/04-any-e-all.html"><strong aria-hidden="true">19.4.</strong> any e all</a></li><li><a href="../19-extra/05-conjuntos.html"><strong aria-hidden="true">19.5.</strong> Conjuntos</a></li><li><a href="../19-extra/06-contadores.html"><strong aria-hidden="true">19.6.</strong> Contadores</a></li><li><a href="../19-extra/07-defaultdict.html"><strong aria-hidden="true">19.7.</strong> defaultdict</a></li><li><a href="../19-extra/08-tuplas-nomeadas.html"><strong aria-hidden="true">19.8.</strong> Tuplas nomeadas</a></li><li><a href="../19-extra/09-reunindo-argumentos-de-palavra-chave.html"><strong aria-hidden="true">19.9.</strong> Reunindo argumentos de palavra-chave</a></li><li><a href="../19-extra/10-glossario.html"><strong aria-hidden="true">19.10.</strong> Glossário</a></li><li><a href="../19-extra/11-exercicios.html"><strong aria-hidden="true">19.11.</strong> Exercícios</a></li></ol></li><li><a href="../apendice-a-depuracao.html">Apêndice A: Depuração</a></li><li class="affix"><a href="../apendice-b-analise-de-algoritmos.html">Apêndice B: Análise de algoritmos</a></li><li class="affix"><a href="../colofao-sobre-o-autor.html">Colofão / Sobre o Autor</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Pense em Python</h1> 
+
+                        <div class="right-buttons">
+                            <a href="../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="#74---break" id="74---break"><h2>7.4 - break</h2></a>
+<p>Às vezes você não sabe que está na hora de terminar um loop até que já esteja na metade do corpo. Neste caso pode usar a instrução break para sair do loop.</p>
+<p>Por exemplo, suponha que você quer receber uma entrada do usuário até que este digite done. Você pode escrever:</p>
+<pre><code class="language-python">while True:
+    line = input('&gt; ')
+    if line == 'done':
+        break
+    print(line)
+print('Done!')
+</code></pre>
+<p>A condição do loop é True, que sempre é verdade, então o loop roda até que chegue à instrução de interrupção.</p>
+<p>Cada vez que passa pelo loop, o programa apresenta ao usuário um colchete angular. Se o usuário digitar done, a instrução break sai do loop. Senão, o programa ecoa o que quer que o usuário digite e volta ao topo do loop. Aqui está uma amostra de execução:</p>
+<pre><code class="language-python">&gt; not done
+not done
+&gt; done
+Done!
+</code></pre>
+<p>Esta forma de escrever loops while é comum porque podemos verificar a condição em qualquer lugar do loop (não somente no topo) e podemos exprimir a condição de parada afirmativamente (“pare quando isto acontecer”) em vez de negativamente (“continue a seguir até que isto aconteça”).</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../07-iteracao/03-instrucao-while.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../07-iteracao/05-raizes-quadradas.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../07-iteracao/03-instrucao-while.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="../07-iteracao/05-raizes-quadradas.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
